@@ -1,0 +1,64 @@
+html {
+    height: 100%;
+}
+
+@keyframes purple-heartbeat {
+    to { background-color: #612590; }
+    from { background-color: #371552; }
+}
+
+@keyframes purple-yellow-heartbeat {
+    to { background-color: #612590; }
+    from { background-color: #a19032; }
+}
+
+body {
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    height: 80%;
+    background-color: #282828;
+}
+
+.heartbeat-purple-yellow {
+    animation-name: purple-yellow-heartbeat;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.heartbeat-purple {
+    animation-name: purple-heartbeat;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.flex-item {
+    height: 100px;
+    text-align: center;
+    padding: 30px;
+}
+
+.countdown {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.year-and-month {
+    color: #ddc4f0;
+    font-size: 1.5em;
+}
+
+.only-month {
+    color: #f8f3fc;
+    font-size: 3em;
+}
