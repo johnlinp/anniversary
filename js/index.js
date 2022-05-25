@@ -47,7 +47,7 @@
             makeBackgroundPurpleHeartbeat('heartbeat-purple');
             createItemInContainer('year-and-month', `Today's our ${renderTime(yearsBetween, 'year')} and ${renderTime(monthsBetween, 'month')} anniversary.`);
         }
-        createItemInContainer('only-month', `It's been ${renderTime(totalMonthsBetween, 'month')} months since.`);
+        createItemInContainer('only-month', `It's been ${renderTime(totalMonthsBetween, 'month')} since.`);
     } else {
         const nextAnniversary = calculateNextAnniversary(start, now);
         const millisecondsBetween = nextAnniversary.getTime() - now.getTime();
